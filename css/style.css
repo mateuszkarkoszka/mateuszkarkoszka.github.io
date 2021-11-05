@@ -1,182 +1,65 @@
-.body1 
-{
-    font-family: 'Montserrat', sans-serif;
-    background: url('../img/tlo.jpg');
-    background-size: cover;   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+*{
+    padding: 0;
     margin: 0;
-    min-height: 5000px;
+    box-sizing: border-box;
 }
-
-.logo
-{
-   width: 15%;
-   display: inline-block;
-   text-align: center; 
+html{
+    font-family: 'Montserrat';
+    font size: 20px
 }
-
-header 
-{
+#hero{
     width: 100%;
-    position: absolute;
-    margin-top: 50px;
+    height: 100vh;
+    background: url('bg.jpg');
+    background-size: cover;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
 }
 
-nav
-{
-    width: 80%;
-    display: inline-block;
-    text-align: right;
-    color: white;
+  .container .info p{
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      font-size: 32px;
+      font-weight: 600;
+  }
+
+  .przycisk {
+     background: #6a1614;
+     color: #fff;
+     text-decoration: none;
+     padding: 20px;
+     margin-top: 100px;
+     border-radius: 20px;
+     -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  }
+
+  .przycisk:hover {
+      background: #ef962d;
+  }
+
+  .logo {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+  }
+
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
-.nav-item
-{
-    display: inline-block;
-    padding: 0px 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-a:link
-{
-color: white;
-text-decoration: none;
-}
-
-a:visited
-{
-color: white;
-text-decoration: none;
-}
-
-.ja
-{
-    height: 400px;
-    padding-top: 200px;
-}
-
-.zdjecie
-{
-    float: left;
-    width: 50%;
-    padding-top: -50px;
-    text-align: center;
-}
-
-.text
-{
-    float: left;
-    width: 49%;
-    text-align: center;
-    color: white;
-}
-.info
-{
-    width: 50%;
-}
-.info h1
-{
-    font-size: 40px;
-}
-
-
-.projekty
-{
-    height: 600px;
-    padding-top: 200px;
-    color: white;
-    text-align: center;
-}
-.bloki h1
-{
-    font-size: 40px;
-}
-.projekt-item
-{
-display: inline-block;
-padding: 50px;
-}
-
-.kto
-{
-    height: 500px;
-    padding-top: 200px;
-    color: white;
-    text-align: center;
-}
-.kto-item
-{
-    display: inline-block;
-    padding: 50px;
-}
-.praca h1
-{
-    font-size: 40px;
-}
-
-.cennik
-{
-    height: 600px;
-    padding-top: 365px;
-    text-align: center;
-    color: white;
-}
-.cena-item
-{
-    display: inline-block;
-    width: 50%;
-}
-.cena h1
-{
-    font-size: 40px;
-}
-
-.stopka
-{
-    height: 600px;
-    padding-top: 280px;
-    color: black;
-    text-align: center;
-}
-.kontakt-item
-{
-    padding: 50px;
-    display: inline-block;
-    width: 10%;
-}
-.kontakt h1
-{
-    font-size: 40px;
-}
-
-.body2 
-{
-    font-family: 'Montserrat', sans-serif;
-    background: url('../img/tlo2.jpg');
-    background-size: cover;   
-    margin: 0;
-    min-height: 5000px;
-}
-
-.body3 
-{
-    font-family: 'Montserrat', sans-serif;
-    background: url('../img/tlo3.jpg');
-    background-size: cover;   
-    margin: 0;
-    min-height: 5000px;
-}
-
-.body4 
-{
-    font-family: 'Montserrat', sans-serif;
-    background: url('../img/tlo4.jpg');
-    background-size: cover;   
-    margin: 0;
-    min-height: 5000px;
-}
-
-html
-{
-    scroll-behavior: smooth;
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
